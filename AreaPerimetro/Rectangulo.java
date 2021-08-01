@@ -1,4 +1,5 @@
 /**Clase: Rectangulo
+ * Ejemplo de clase sin utilizar Constructores
  */
 package AreaPerimetro;
 
