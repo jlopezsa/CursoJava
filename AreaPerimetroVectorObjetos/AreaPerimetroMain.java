@@ -49,7 +49,6 @@ public class AreaPerimetroMain {
             vec_rec[i].setAltura(datoConsola.nextDouble()); // El valor ingresado por el usuario es enviado en el argumento del método setArea
             System.out.println("La area y el perimetro del objeto "+ i +" es: "+ vec_rec[i].calculaArea() +" y "+ vec_rec[i].calculaPerimetro());
         }
-
         datoConsola.close();    // Cerrando scanner
     }
 }

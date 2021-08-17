@@ -1,4 +1,4 @@
-/**Prograam: Ejemplo de uso de una estructura IF anidada
+/**Programa: Ejemplo de uso de una estructura IF anidada
  * En este menu se muestra una menu de 3 opciones y el usuario selecciona una de ellas.
  * 
  */
@@ -8,7 +8,7 @@ public class EstructuraSeleccionAnidada {
     public static void main(String[] args) {
         Scanner datoConsola = new Scanner(System.in);
         
-        int opcion;                                     //  Variable que almacena el dato que inresa el usuario.
+        int opcion;                                     //  Variable que almacena el dato que ingresa el usuario.
 
         System.out.println("Menu de ingredientes:");    // Meno en consola que muestras las opciones posibles que el usuario puede ingresar.
         System.out.println("1 - cebolla ");

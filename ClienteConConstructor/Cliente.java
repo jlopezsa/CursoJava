@@ -8,7 +8,7 @@ public class Cliente {
     
     // Metodos
     public Cliente(){           // Constructor con valores por defecto. Si creo 50 objetos, todos se crean cons esos valores
-        nombre = "Sin nombre";
+        nombre = "";
         edad = 0;
         mayor_edad = false; 
     }

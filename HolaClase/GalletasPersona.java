@@ -3,16 +3,31 @@
 */
 package HolaClase;
 public class GalletasPersona {                  // Nombre de la Clase
-    //-------- Atributos ------------------
-    private String nombre;                      // Atributo privado tipo String. Los atributos privados puden ser accesados únicamente por medio de los métodos.
-    private int precio;
-    private float peso;
-    private boolean disponibilidad;
-    //--------- Metodos -------------------
-    public void setNombre(String nombre) {      // Método para poder accesar al atributo "nombre" y atribuirle un valor. 
-        this.nombre = nombre;                   // Usamos THIS porque el arumento de la funcion es igual al atributo de la clase, es decir "nombre"
+    //----- Atributos ------
+    private String nombre;
+    private int valor;
+    private double peso;
+    //----- Metodos --------
+    public void setNombre(String nom){
+        nombre = nom;
     }
-    public String getNombre(){                  // Método que retorna el contenido del atributo "nombre". 
+
+    public String getNombre(){
         return nombre;
+    }
+
+    public void setValor(int valor){
+        this.valor = valor;
+    }
+
+    public int getValor(){
+        return valor;
+    }
+    public void setPeso(double pes){
+        peso = pes;
+    }
+
+    public double getPeso(){
+        return peso;
     }
 }

@@ -10,24 +10,31 @@ public class FuncionesTiposDeFunciones {
     public static void main(String[] args) {
 
         menuOpciones();                                     //Invocando la función menuOpciones(). Es una función sin valor de retorno y no recibe arumentos (parámetros de entrada)
+        
 
         double operador1 = 9.78;                            // Declaración de variables y atribución de un valor.
         double operador2 = 11.23;                           // Declaración de variables y atribución de un valor.
-        double resultadoSuma;                               // Declaración de variable que recibirá el resultado de una función
-
-        resultadoSuma = sumaNumeros(operador1,operador2);   // Dos pasos son ejecutados: 
+        double resultadoSuma1;                               // Declaración de variable que recibirá el resultado de una función
+        double resultadoSuma2;
+        
+        resultadoSuma1 = sumaNumeros(operador1,operador2);   // Dos pasos son ejecutados: 
                                                             // 1) se invoca la función sumaNumeros y se envian los arumentos (parámetros de entrada), y 
                                                             // 2) el valor de retorno de sumaNumeros se atribuye a la variable resultadoSuma
-        System.out.println("\nLa suma entre " + operador1 +" y "+operador2+" es "+ resultadoSuma); // Simplemente se imprimen un mensaje con las variables
+        System.out.println("\nLa suma entre " + operador1 +" y "+operador2+" es "+ resultadoSuma1); // Simplemente se imprimen un mensaje con las variables
+        
 
-        valorMedioNumeros(operador1,operador2);             // Invocación de la función valorMedioNumeros(). Se envian los parámetros a la función.
+        resultadoSuma2 = sumaNumeros(12.7, 11.29);
+        System.out.println("\nLa suma entre " + 12.7 +" y "+ 11.29+" es "+ resultadoSuma2);
+
+        
+        //valorMedioNumeros(operador1,operador2);             // Invocación de la función valorMedioNumeros(). Se envian los parámetros a la función.
                                                             // La función valorMedioNumeros() no retorna ningun valor.
-
+        
         System.out.println("... Fin programa ...");
         
     }
 
-    // Firma de la función. Función SIN retorno y SIN parametros. 
+    // Firma de la función. Función SIN retorno y SIN parametros.
     public static void menuOpciones(){  
         // Esta función tiene como objetivo imprimir un mensaje en consola.
         // NOTA: el tipo de retorno es VOID porque no se retorna ningun valor.
@@ -42,6 +49,7 @@ public class FuncionesTiposDeFunciones {
         // Esta función tiene como objetivo sumar dos números.
         // NOTA: el tipo de retorno es DOUBLE porque se retorna una variable DOUBLE.
         //
+
         double resultado;
         resultado = opA + opB;
         return resultado;
