@@ -24,14 +24,14 @@ public class EstructuraRepeticionWhileAndDo {
 
         
         
-        
+        /*
         System.out.println("Ejemplo de WHILE controlado por USUARIO");
         int opcion = 0;
         while(opcion != 55){                        // Ejemplo de WHILE controlado por agente externo (Usuario)
             System.out.print("Ingrese cualquier dato (55 para finalizar): ");
             opcion = datoConsola.nextInt();         // Modificador de la <condición>
         };
-        
+        */
 
 
 

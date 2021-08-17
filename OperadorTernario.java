@@ -19,3 +19,23 @@ public class OperadorTernario {
         datoConsola.close();
     }
 }
+
+
+
+
+
+
+/*
+System.out.println("Ingresar numero entero: ");
+
+        try{
+            numeroUsuario = datoConsola.nextInt();
+            System.out.println("Su numero es: "+numeroUsuario);
+        }catch(InputMismatchException errorEntrada){
+            System.out.println("ERROR: no es entero:" + errorEntrada.getMessage());
+        }
+        
+        System.out.println("... Fin programa ...");
+        
+        datoConsola.close(); 
+        */

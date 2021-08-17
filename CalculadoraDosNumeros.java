@@ -78,7 +78,7 @@ public class CalculadoraDosNumeros {
             }  
         } catch (Exception e) {
             System.out .println("ERROR, usted no digito un numero entero");
-            datoConsola.next();               // Es necesário adicionar este método del Scanner para borrar la entrada no válida de scanner.
+            datoConsola.next();                                 // Es necesário adicionar este método del Scanner para borrar la entrada no válida de scanner.
             return 0;
         }
     }    

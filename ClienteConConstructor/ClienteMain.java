@@ -2,12 +2,9 @@
  * 
 */
 package ClienteConConstructor;
-import java.util.Scanner;
 
 public class ClienteMain {
     public static void main(String[] args) {
-
-        Scanner datoConsola = new Scanner(System.in);
 
         Cliente persona = new Cliente();       // Creando un objeto con constructor, pero sin arumentos
         
@@ -23,20 +20,6 @@ public class ClienteMain {
         System.out.println("La persona " + personaNueva.getNombre() +
                         " de edad "+ personaNueva.getEdad() + " anhos, " +
                         "es mayor de edad? " + personaNueva.isMayorEdad());
-
-        System.out.println("-------Entrando datos por cosola.-----");
-        System.out.print("Digite nombre: ");
-        String nom = datoConsola.nextLine();
-        personaNueva.setNombre(nom);
-        System.out.print("Digite Edad: ");
-        personaNueva.setEdad(datoConsola.nextInt());
-        personaNueva.consultaMayor();
-        System.out.println("La persona " + personaNueva.getNombre() +
-                        " de edad "+ personaNueva.getEdad() + " anhos, " +
-                        "es mayor de edad? " + personaNueva.isMayorEdad());
-
-        datoConsola.close();
-        System.out.println("Fin programa.");
     }
     
 }

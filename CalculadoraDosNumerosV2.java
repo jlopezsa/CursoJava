@@ -8,8 +8,6 @@ public class CalculadoraDosNumerosV2 {
     public static void main(String[] args) {
 
         Scanner datoConsola = new Scanner(System.in);
-
-        menuOpciones();
         
         int res = capturaOpcion(datoConsola);               // Ejemplo de función que captura una numero entero del usuario. Esta función crea un Sscanner internamente
         System.out.println(res);
@@ -51,13 +49,6 @@ public class CalculadoraDosNumerosV2 {
                 break;
         }
         datoConsola.close();                                // metodo que cierra el Scanner numeroConsola()
-    }// Fin de MAIN
-
-    public static void menuOpciones(){
-        System.out.println("Calculadora");
-        System.out.println("1. Suma");
-        System.out.println("2. Resta");
-        System.out.println("3. Multtiplicacion");
     }
 
     public static double numeroUsuario(Scanner numCos){

@@ -8,20 +8,14 @@ package HolaClase;
 public class HolaClaseMain {
     public static void main(String[] args) {
 
-        GalletasPersona galletaSalada = new GalletasPersona();
+        GalletasPersona galletaAlien = new GalletasPersona();   // Reservando espacion en memória e instanciando la clase (creando un objeto)
+        System.out.println(galletaAlien.getNombre());           // Capturando el atributo privado "nombre" por medio del método público "getNombre".
+                                                                // Acá mismo estamos imprimiendo el "nombre" para mostrar que está vacio (null)
 
-        System.out.println(galletaSalada.getNombre());
+        galletaAlien.setNombre("Alien");                        // Usando el método público "setNombre" para atribuir un valor al atributo "nombre"
 
-        galletaSalada.setNombre("crocanteSalada");
-        System.out.println( galletaSalada.getNombre() );
-
-        galletaSalada.setValor(250);
-        System.out.println( galletaSalada.getValor() );
-
-
-        
-        
-
+        System.out.println(galletaAlien.getNombre());           // Capturando el atributo privado "nombre" por medio del método público "getNombre".
+                                                                // Imprimiendo el atributo "nombre"
     }
-
+    
 }
