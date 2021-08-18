@@ -1,6 +1,6 @@
 /**Prorama: Template para implementar Reto2
  * Clase Boleta
- * Sugerencias para trabajar con la Clase Date
+ * Sugerencias para trabajar con la Clase Date usando milisegundos
  */
 
 package Reto2Pruebas;       // Borrar esta linea cuando el documento sea enviado a la plataforma
