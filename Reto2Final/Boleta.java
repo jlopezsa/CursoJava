@@ -29,17 +29,17 @@ public class Boleta {
         setFecha_vencimiento(fecha_vencimiento);
         String mensaje="";
         
-        if(dias_entre_fechas>dias_ms & silla.getNumero_silla()%2==0){
-            mensaje = "La boleta no está permitida, ya que tanto la fecha de vencimiento como el número de silla son inválidos";
+        if(  ){
+            mensaje = "mensaje ";
         }
-        if(dias_entre_fechas<=dias_ms & silla.getNumero_silla()%2==0){
-            mensaje = "La boleta es inválida, ya que el número de silla no está permitido";
+        if( ){
+            mensaje = " ";
         }
-        if (dias_entre_fechas>dias_ms & silla.getNumero_silla()%2==1) {
-            mensaje = "La boleta no está permitida, ya que la fecha de vencimiento es inválida";
+        if ( ) {
+            mensaje = " ";
         }
-        if(dias_entre_fechas<=dias_ms & silla.getNumero_silla()%2==1){
-            mensaje = "La boleta es válida, el usuario puede acceder al estadio";
+        if(   ){
+            mensaje = " ";
         }
         return mensaje;
     }
