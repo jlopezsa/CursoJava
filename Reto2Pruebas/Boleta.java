@@ -1,6 +1,7 @@
 /**Prorama: Template para implementar Reto2
  * Clase Boleta
  * Sugerencias para trabajar con la Clase Date usando milisegundos
+ * 
  */
 
 package Reto2Pruebas;       // Borrar esta linea cuando el documento sea enviado a la plataforma
@@ -10,7 +11,7 @@ public class Boleta {
     private int id_boleta;
     private Date fecha_compra;
     Silla silla;
-    private static final int DIA_ANTIUEDAD = 14;
+    private static final int DIA_ANTIGUEDAD = 14;    // opcional
     
     public Boleta(){
     }
@@ -30,7 +31,7 @@ public class Boleta {
         String mensaje = "";
         Date fecha_actual = new Date();
         long fecha_actual_ms = fecha_actual.getTime();
-        long dia_limite_ms = 86400000*DIA_ANTIUEDAD;
+        long dia_limite_ms = 86400000*DIA_ANTIGUEDAD;
 
         long dia_vencimiento_ms = fecha_actual_ms - dia_limite_ms;
 
