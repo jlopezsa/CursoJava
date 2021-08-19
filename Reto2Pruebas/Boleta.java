@@ -10,6 +10,7 @@ public class Boleta {
     private int id_boleta;
     private Date fecha_compra;
     Silla silla;
+    private static final int DIA_ANTIUEDAD = 14;
     
     public Boleta(){
     }
@@ -26,14 +27,28 @@ public class Boleta {
     }
     //-----------------------------------------------
     public String verificarBoleta(){
-        //Date fecha_actual = new Date();
-        
-        System.out.println("Datos dentro de verificat boleta: " + fecha_compra);
-
-
         String mensaje = "";
-        
-        // Codigo 
+        Date fecha_actual = new Date();
+        long fecha_actual_ms = fecha_actual.getTime();
+        long dia_limite_ms = 86400000*DIA_ANTIUEDAD;
+
+        long dia_vencimiento_ms = fecha_actual_ms - dia_limite_ms;
+
+        //System.out.println("Fecha actual: " + fecha_actual);
+        //System.out.println("Fecha compra: " + fecha_compra);
+        //Date fecha_vencimiento = new Date(dia_vencimiento_ms);
+        //System.out.println("Fecha vencim: " + fecha_vencimiento);
+
+        if(fecha_compra.getTime() >= dia_vencimiento_ms && silla.getNumero_silla()%2==0){
+            mensaje = "mensaje 1";
+        }
+        if(       false            ){
+            mensaje = "mensaje 2";
+        }
+        if(        false           ){
+            mensaje = "mensaje 3";
+        }
+
 
         return mensaje;
     }
@@ -46,23 +61,16 @@ public class Boleta {
     }
     public static void main(String[] args) {
 
-        Silla nueva_silla = new Silla(0,3);
+        Silla nueva_silla = new Silla(0,6);
 
         Date fecha_actual = new Date();
-        System.out.println(fecha_actual);
         long fecha_actual_ms = fecha_actual.getTime();
-        long dias_ms = 86400000*12;
+        long dias_ms = 86400000*7;
 
         Date fecha_compra = new Date(fecha_actual_ms-dias_ms);
 
-        System.out.println(fecha_compra);
-
         Boleta nueva_boleta = new Boleta(0, fecha_compra, nueva_silla);
 
-        nueva_boleta.verificarBoleta();
-
-
-
-        
+        System.out.println(nueva_boleta.verificarBoleta());
     }
 }
