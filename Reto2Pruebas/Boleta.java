@@ -11,7 +11,7 @@ public class Boleta {
     private int id_boleta;
     private Date fecha_compra;
     Silla silla;
-    private static final int DIA_ANTIGUEDAD = 14;    // opcional
+    private static final int DIA_ANTIGUEDAD = 14;    // constante
     
     public Boleta(){
     }
