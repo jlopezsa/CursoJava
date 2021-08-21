@@ -11,7 +11,13 @@ public class Reto3Main {
 
         Date fecha_compra = new Date();
 
-        Boleta boleta_total = new Boleta(0, fecha_compra, asistentes);
+        AsistentePartido vector_asistentes[] = new AsistentePartido[3];
+        vector_asistentes[0] = persona1;
+
+
+        Boleta boleta_total = new Boleta(0, fecha_compra, vector_asistentes);
+
+        boleta_total.boleteriaTotal();
         
         //System.out.println("La silla de " + persona1.getNombre_asistente() + " corresponde al número " + silla_persona1.getNumero());
         //System.out.println("La silla de " + persona1.getNombre_asistente() + " corresponde al número " + persona1.getSilla().getNumero());

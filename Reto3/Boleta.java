@@ -13,13 +13,16 @@ public class Boleta {
         this.idBoleta = idBoleta;
         this.fecha_compra = fecha_compra;
         this.asistentes = asistentes;
-
     }
 
     public double boleteriaTotal(){
         double retorno = 0;
-
         // Logica del código
+
+        
+
+        System.out.println("El nombre del asistente es: " + asistentes[0].getNombre_asistente());
+        System.out.println("El numero de silla es: " + asistentes[0].getSilla().getNumero());
 
         return retorno; 
     }
