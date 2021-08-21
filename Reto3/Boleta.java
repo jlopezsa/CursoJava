@@ -9,9 +9,9 @@ public class Boleta {
     public Boleta(){
 
     }
-    public Boleta(int idBoleta, Date fecha_comprDate, AsistentePartido[] asistentes){
+    public Boleta(int idBoleta, Date fecha_compra, AsistentePartido[] asistentes){
         this.idBoleta = idBoleta;
-        this.fecha_compra = fecha_comprDate;
+        this.fecha_compra = fecha_compra;
         this.asistentes = asistentes;
 
     }
